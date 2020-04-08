@@ -25,7 +25,7 @@ class ViewController: UIViewController {
             let dest = segue.destination as! ViewController2
             dest.myclosure = { text in
                 self.testInt += 5
-                return text + 5
+                return 4
             }
         }
     }

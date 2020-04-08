@@ -11,10 +11,13 @@ import UIKit
 class ViewController2: UIViewController {
     @IBOutlet weak var buttonDest: UIButton!
     
-    @IBAction func buttonDestAction(_ sender: Any) { myclosure!(10)
+    @IBAction func buttonDestAction(_ sender: Any) {
+      myvalue = myclosure!(10)
+      print(myvalue)
         
     }
     var myclosure: ((Int) -> (Int))?
+    var myvalue: Int = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
